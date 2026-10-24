@@ -15,11 +15,7 @@ overall response. No trained ML model is used.
 ```bash
 pip install -r requirements.txt
 streamlit run app.py        # dashboard (click "DEMO MODE" for a scripted run)
-python smoke_test.py        # headless test of every scenario + evacuation preset
 ```
-
-`smoke_test.py` also builds every Plotly figure when plotly is installed; without
-plotly it tests the simulation/agent engine only.
 
 ## Files
 
