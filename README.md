@@ -1,6 +1,6 @@
 # ResQM - Multi-Agent Industrial Disaster Response System
 
-A **simulation-only** emergency operations centre for a fictional 100 m x 60 m
+A simulation-only emergency operations centre for a fictional 100 m x 60 m
 plant. Five cooperating rule-based agents detect a gas leak / fire, predict how
 it spreads, plan evacuation routes with A*, prioritise rescue and coordinate the
 overall response. No trained ML model is used.
@@ -52,12 +52,6 @@ zones step through MODERATE/HIGH/CRITICAL as the plume spreads. Sensor threshold
 a gas sensor alarms at about H = 33.
 
 ## Known limitations
-
-* **Point sensors can miss a plume.** There is one sensor per zone, at the zone
-  centre. If wind carries a release away from that sensor (e.g. a source at a
-  zone edge with wind blowing out of the building) the system may not detect
-  it even though people nearby are exposed. This mirrors real sensor-coverage
-  gaps; add sensors or change the wind to see the difference.
 * The dispersion model ignores walls, buoyancy, terrain and chemistry.
 * The exposure/dose model is illustrative, not toxicology.
 * The Prediction Agent assumes the source is the zone centre of the first alarm.
